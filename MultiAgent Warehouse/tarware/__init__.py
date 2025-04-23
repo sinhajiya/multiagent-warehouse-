@@ -1,6 +1,6 @@
 import itertools
 
-import gym
+import gymnasium as gym
 
 from tarware.spaces import observation_map
 from tarware.warehouse import RewardType
