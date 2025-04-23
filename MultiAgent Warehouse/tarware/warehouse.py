@@ -1,11 +1,11 @@
 import random
 from typing import Dict, List, Optional, Tuple
 import matplotlib.pyplot as plt
-import gymnasium as gym
+import gym
 import networkx as nx
 import numpy as np
 import pyastar2d
-from gymnasium import spaces
+from gym import spaces
 from tarware.definitions import (Action, AgentType, Direction,
                                  RewardType, CollisionLayers)
 from tarware.spaces import observation_map
@@ -326,7 +326,7 @@ class Warehouse(gym.Env):
     def get_carrying_shelf_information(self):
         return [agent.carrying_shelf != None for agent in self.agents[:self.num_agvs]]
 
-    def get_shelf_request_information(self) -> np.ndarray[int]:
+    def get_shelf_request_information(self) -> np.ndarray:
         request_item_map = np.zeros(len(self.shelfs))
         requested_shelf_ids = [shelf.id for shelf in self.request_queue]
         for id_, coords in self.action_id_to_coords_map.items():
@@ -335,7 +335,7 @@ class Warehouse(gym.Env):
                     request_item_map[id_ - len(self.goals) - 1] = 1
         return request_item_map
 
-    def get_empty_shelf_information(self) -> np.ndarray[int]:
+    def get_empty_shelf_information(self) -> np.ndarray:
         empty_item_map = np.zeros(len(self.shelfs))
         for id_, coords in self.action_id_to_coords_map.items():
             if (coords[1], coords[0]) not in self.goals:
@@ -521,7 +521,7 @@ class Warehouse(gym.Env):
     def _execute_rotation(self, agent: Agent) -> None:
         agent.dir = agent.req_direction()
 
-    def _execute_load(self, agent: Agent, rewards: np.ndarray[int]) -> np.ndarray[int]:
+    def _execute_load(self, agent: Agent) -> None:
         shelf_id = self.grid[CollisionLayers.SHELVES, agent.y, agent.x]
         picker_id = self.grid[CollisionLayers.PICKERS, agent.y, agent.x]
         if shelf_id:
@@ -545,7 +545,7 @@ class Warehouse(gym.Env):
             agent.busy = False
         return rewards
 
-    def _execute_unload(self, agent: Agent, rewards: np.ndarray[int]) -> np.ndarray[int]:
+    def _execute_unload(self, agent: Agent, rewards: np.ndarray) -> np.ndarray:
         if (agent.x, agent.y) in self.goals or self.grid[CollisionLayers.SHELVES, agent.y, agent.x] != 0:
             agent.busy = False
             return rewards
@@ -570,7 +570,7 @@ class Warehouse(gym.Env):
                         rewards[picker_id - 1] += 0.1
         return rewards
 
-    def execute_micro_actions(self, rewards: np.ndarray[int]) -> np.ndarray[int]:
+    def execute_micro_actions(self, rewards: np.ndarray) -> np.ndarray:
         for agent in self.agents:
             if agent.req_action == Action.FORWARD:
                 self._execute_forward(agent)
@@ -583,7 +583,7 @@ class Warehouse(gym.Env):
                     rewards = self._execute_unload(agent, rewards)
         return rewards
 
-    def process_shelf_deliveries(self, rewards: np.ndarray[int]) -> np.ndarray[int]:
+    def process_shelf_deliveries(self, rewards: np.ndarray) -> np.ndarray:
         shelf_deliveries = 0
         for y, x in self.goals:
             shelf_id = self.grid[CollisionLayers.CARRIED_SHELVES, x, y]

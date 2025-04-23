@@ -1,5 +1,5 @@
 import numpy as np
-from gymnasium import spaces
+from gym import spaces
 
 from tarware.definitions import Action, AgentType, CollisionLayers
 from tarware.spaces.MultiAgentBaseObservationSpace import (

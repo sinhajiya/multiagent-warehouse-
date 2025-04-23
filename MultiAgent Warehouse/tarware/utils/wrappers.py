@@ -1,8 +1,8 @@
 import math
 
-import gymnasium as gym
+import gym
 import numpy as np
-from gymnasium import ObservationWrapper, spaces
+from gym import ObservationWrapper, spaces
 
 from tarware import Action
 

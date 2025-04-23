@@ -1,6 +1,6 @@
 import itertools
 
-import gymnasium as gym
+import gym
 
 from tarware.spaces import observation_map
 from tarware.warehouse import RewardType
@@ -26,6 +26,7 @@ _request_queues = {
 _perms = itertools.product(_sizes.keys(), _obs_types, range(1,20), range(1, 10))
 
 for size, obs_type, num_agvs, num_pickers in _perms:
+# for size, obs_type, request_queue, num_agvs, num_pickers in _perms:
     # normal tasks
     gym.register(
         id=f"tarware-{size}-{num_agvs}agvs-{num_pickers}pickers-{obs_type}obs-v1",
@@ -46,7 +47,8 @@ for size, obs_type, num_agvs, num_pickers in _perms:
 
 def full_registration():
     _perms = itertools.product(_sizes.keys(), _obs_types, _request_queues, range(1,20), range(1, 10),)
-    for size, obs_type, num_agvs, num_pickers in _perms:
+    # for size, obs_type, num_agvs, num_pickers in _perms:
+    for size, obs_type, request_queue, num_agvs, num_pickers in _perms:
         # normal tasks with modified column height
         gym.register(
             id=f"tarware-{size}-{num_agvs}agvs-{num_pickers}pickers-{obs_type}obs-v1",
