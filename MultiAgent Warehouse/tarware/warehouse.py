@@ -1,11 +1,11 @@
 import random
 from typing import Dict, List, Optional, Tuple
 import matplotlib.pyplot as plt
-import gym
+import gymnasium as gym
 import networkx as nx
 import numpy as np
 import pyastar2d
-from gym import spaces
+from gymnasium import spaces
 from tarware.definitions import (Action, AgentType, Direction,
                                  RewardType, CollisionLayers)
 from tarware.spaces import observation_map
