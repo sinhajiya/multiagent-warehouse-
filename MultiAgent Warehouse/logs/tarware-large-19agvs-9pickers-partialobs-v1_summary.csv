@@ -1,0 +1,26 @@
+pickers_distance_travelled,pickers_idle_time,vehicles_busy,shelf_deliveries,agvs_idle_time,clashes,agvs_distance_travelled,stucks,total_deliveries,total_clashes,total_stuck,episode_length,global_episode_return,episode_returns,overall_pick_rate,episode,env,id,time_taken
+5,5,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, False, False, True, True, True, True, False]",0,8,0,10,0,61,109,11,500,59.00000000000044,"[ 3.5  1.5  2.5  2.5  2.5  1.5  0.5  3.5  3.5  3.5  3.5  2.5  3.5  3.5
+  2.5  2.5  3.5  3.5  1.5  0.7  1.1  0.7  0.6  1.4  2.1 -0.1  0.9  0.1]",87.84,0,large-19agvs-9pickers-partialobs,0_ep0,1.9047460556030273
+6,4,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, False, True, False]",0,8,0,11,0,61,158,11,500,58.90000000000049,"[ 2.5  3.5  2.5  2.5  1.5  1.5  2.5  3.5  3.5  2.5  3.5  1.5  2.5  2.5
+  3.5  3.5  3.5  2.5  2.5  1.8  1.5  0.9  1.4  1.2  0.5 -0.1 -0.5  0.7]",87.84,1,large-19agvs-9pickers-partialobs,1_ep1,-0.5760879516601562
+5,4,"[True, True, True, False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, True, True, False, False, False]",1,11,1,8,0,63,109,13,500,60.90000000000047,"[2.5 3.5 2.5 3.5 3.5 3.5 2.5 2.5 1.5 2.5 3.5 2.5 2.5 2.5 3.5 2.5 3.5 3.5
+ 1.5 1.1 1.  0.9 0.9 0.9 2.  0.1 0.4 0.1]",90.72,2,large-19agvs-9pickers-partialobs,2_ep2,1.8357431888580322
+6,3,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, False]",0,9,0,9,0,63,144,16,500,61.300000000000445,"[2.5 2.5 2.5 1.5 3.5 1.5 1.5 2.5 2.5 4.5 4.5 3.5 3.5 2.5 3.5 4.5 2.5 2.5
+ 1.5 1.2 1.5 1.5 0.3 0.8 1.  0.2 0.4 0.9]",90.72,3,large-19agvs-9pickers-partialobs,3_ep3,1.931868553161621
+5,5,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, False, False]",0,7,0,11,0,65,137,13,500,63.40000000000048,"[ 3.50000000e+00  3.50000000e+00  2.50000000e+00  2.50000000e+00
+  3.50000000e+00  2.50000000e+00  3.50000000e+00  3.50000000e+00
+  2.50000000e+00  2.50000000e+00  3.50000000e+00  3.50000000e+00
+  3.50000000e+00  1.50000000e+00  2.50000000e+00  2.50000000e+00
+  3.50000000e+00  2.50000000e+00  2.50000000e+00  1.30000000e+00
+  1.40000000e+00  1.30000000e+00  2.10000000e+00  1.30000000e+00
+  5.00000000e-01 -3.40005801e-16  1.00000000e-01 -1.00000000e-01]",93.6,4,large-19agvs-9pickers-partialobs,4_ep4,1.8635056018829346
+4,4,"[True, True, True, True, True, True, True, True, True, False, True, True, True, True, True, True, True, True, True, False, True, False, True, True, True, False, False, True]",0,12,1,9,0,70,115,15,500,69.4000000000003,"[3.5 4.5 2.5 2.5 2.5 2.5 1.5 3.5 3.5 2.5 3.5 3.5 3.5 2.5 3.5 3.5 4.5 2.5
+ 4.5 1.1 1.5 1.  2.  1.2 0.7 0.6 0.3 0.5]",100.8,5,large-19agvs-9pickers-partialobs,5_ep5,1.881922721862793
+3,7,"[False, True, True, True, True, True, True, True, True, True, True, True, False, True, True, True, True, True, True, False, True, False, True, False, False, False, True, False]",1,8,0,11,0,72,119,17,500,72.10000000000024,"[2.5 2.5 4.5 2.5 3.5 3.5 4.5 4.5 2.5 3.5 2.5 3.5 4.5 3.5 2.5 2.5 2.5 3.5
+ 3.5 1.9 0.8 1.6 1.6 0.5 1.3 1.  0.4 0.5]",103.68,6,large-19agvs-9pickers-partialobs,6_ep6,1.923532247543335
+6,4,"[True, True, True, True, True, False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, False, True, True, True, True, True, True]",0,9,0,7,0,64,95,13,500,62.50000000000048,"[ 2.5  2.5  2.5  2.5  2.5  3.5  2.5  3.5  3.5  2.5  2.5  4.5  1.5  2.5
+  1.5  2.5  4.5  2.5  4.5  1.9  0.9  1.4  1.2  1.1  0.8 -0.1  0.6  0.2]",92.16,7,large-19agvs-9pickers-partialobs,7_ep7,1.9256095886230469
+7,6,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, True, True, True, True, False]",0,7,1,16,0,73,348,29,500,73.20000000000005,"[2.5 2.5 3.5 4.5 3.5 3.5 2.5 2.5 3.5 3.5 4.5 3.5 3.5 3.5 3.5 3.5 3.5 1.5
+ 4.5 2.  1.3 0.8 1.5 0.8 1.3 0.3 0.8 0.9]",105.12,8,large-19agvs-9pickers-partialobs,8_ep8,2.0924789905548096
+5,5,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True, True, False, True, True, True, False, False]",0,10,1,11,0,67,256,24,500,65.80000000000025,"[2.5 4.5 3.5 3.5 2.5 3.5 2.5 3.5 3.5 2.5 2.5 1.5 2.5 3.5 2.5 3.5 3.5 3.5
+ 2.5 0.8 0.4 0.8 1.2 1.2 2.  0.5 0.7 0.7]",96.48,9,large-19agvs-9pickers-partialobs,9_ep9,1.9881443977355957
