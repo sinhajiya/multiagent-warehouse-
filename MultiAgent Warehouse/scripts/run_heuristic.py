@@ -66,14 +66,28 @@ if __name__ == "__main__":
         print(f"Completed Episode {completed_episodes}: | [Overall Pick Rate={last_info.get('overall_pick_rate'):.2f}]| [Global return={last_info.get('global_episode_return'):.2f}]| [Total shelf deliveries={last_info.get('total_deliveries'):.2f}]| [Total clashes={last_info.get('total_clashes'):.2f}]| [Total stuck={last_info.get('total_stuck'):.2f}]")
         completed_episodes += 1
 
-
-    
-
     fieldnames = [
-        "id", "env", "episode", "episode_length", "global_episode_return",
-        "total_deliveries", "total_clashes", "total_stuck",
-        "overall_pick_rate", "time_taken"
-    ]
+    "pickers_distance_travelled",
+    "pickers_idle_time",
+    "vehicles_busy",
+    "shelf_deliveries",
+    "agvs_idle_time",
+    "clashes",
+    "agvs_distance_travelled",
+    "stucks",
+    "total_deliveries",
+    "total_clashes",
+    "total_stuck",
+    "episode_length",
+    "global_episode_return",
+    "episode_returns",
+    "overall_pick_rate",
+    "episode",
+    "env",
+    "id",
+    "time_taken",
+]
+
 
     with open(csv_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)

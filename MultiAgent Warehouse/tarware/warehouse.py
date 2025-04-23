@@ -521,7 +521,7 @@ class Warehouse(gym.Env):
     def _execute_rotation(self, agent: Agent) -> None:
         agent.dir = agent.req_direction()
 
-    def _execute_load(self, agent: Agent) -> None:
+    def _execute_load(self, agent: Agent,rewards: np.ndarray) -> np.ndarray:
         shelf_id = self.grid[CollisionLayers.SHELVES, agent.y, agent.x]
         picker_id = self.grid[CollisionLayers.PICKERS, agent.y, agent.x]
         if shelf_id:

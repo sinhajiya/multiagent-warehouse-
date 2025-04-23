@@ -1,0 +1,11 @@
+pickers_distance_travelled,pickers_idle_time,vehicles_busy,shelf_deliveries,agvs_idle_time,clashes,agvs_distance_travelled,stucks,total_deliveries,total_clashes,total_stuck,episode_length,global_episode_return,episode_returns,overall_pick_rate,episode,env,id,time_taken
+1,1,"[True, True, True, True, False]",0,1,0,2,0,17,5,0,500,17.699999999999832,[4.5 5.5 5.5 0.9 1.3],24.48,0,medium-3agvs-2pickers-partialobs,0_ep0,0.38495802879333496
+2,0,"[True, True, True, True, True]",0,1,0,2,0,17,2,2,500,17.79999999999986,[4.5 4.5 6.5 1.  1.3],24.48,1,medium-3agvs-2pickers-partialobs,1_ep1,0.5015325546264648
+1,1,"[True, True, True, True, False]",0,1,0,2,0,18,17,0,500,19.09999999999996,[5.5 5.5 5.5 0.9 1.7],25.92,2,medium-3agvs-2pickers-partialobs,2_ep2,0.4801821708679199
+1,1,"[True, True, True, True, False]",0,2,0,1,0,15,6,2,500,15.599999999999811,[4.5 4.5 4.5 1.2 0.9],21.6,3,medium-3agvs-2pickers-partialobs,3_ep3,0.4615044593811035
+0,2,"[True, False, True, False, False]",0,2,0,1,0,15,6,5,500,15.399999999999837,[4.5 4.5 4.5 0.5 1.4],21.6,4,medium-3agvs-2pickers-partialobs,4_ep4,0.4669981002807617
+2,0,"[True, True, True, True, True]",0,1,0,2,0,10,0,0,500,9.599999999999962,[ 3.5  2.5  2.5  1.4 -0.3],14.4,5,medium-3agvs-2pickers-partialobs,5_ep5,0.4305567741394043
+1,1,"[True, True, True, False, True]",0,1,0,2,0,18,5,0,500,19.09999999999988,[5.5 4.5 6.5 0.8 1.8],25.92,6,medium-3agvs-2pickers-partialobs,6_ep6,0.46050286293029785
+2,0,"[True, True, True, True, True]",0,2,0,1,0,16,8,1,500,16.699999999999925,[4.5 5.5 4.5 1.1 1.1],23.04,7,medium-3agvs-2pickers-partialobs,7_ep7,0.4051203727722168
+1,1,"[True, True, True, True, False]",0,1,0,2,0,15,6,1,500,15.499999999999805,[3.5 5.5 4.5 1.6 0.4],21.6,8,medium-3agvs-2pickers-partialobs,8_ep8,0.4252619743347168
+2,1,"[True, True, True, True, True]",0,2,0,1,0,14,3,1,500,14.199999999999875,[4.5 4.5 3.5 0.4 1.3],20.16,9,medium-3agvs-2pickers-partialobs,9_ep9,0.3942532539367676

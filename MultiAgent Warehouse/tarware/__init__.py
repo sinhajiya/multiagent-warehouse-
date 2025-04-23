@@ -59,7 +59,7 @@ def full_registration():
                 "shelf_columns": _sizes[size][1],
                 "num_agvs":  num_agvs,
                 "num_pickers": num_pickers,
-                "sensor_range": 1,
+                # "sensor_range": 1,
                 "request_queue_size": _request_queues[size],
                 "max_inactivity_steps": None,
                 "max_steps": 500,
